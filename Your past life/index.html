@@ -7,8 +7,13 @@
         <link rel="stylesheet" href="style.css">
 	</head>
 <body>
-<script src="js.js">
+<script src="generate.js">
 </script>
+<script src="function.js">
+</script>
+<script src="createParagraph.js">
+</script>
+
 
 <div class="header">
 	<h1 class="header_title">YOUR PAST LIFE</h1>
@@ -23,17 +28,17 @@
 	</div>
 
 	<div>
-		<button class="header_generate" onclick="calculateYearsTogether()">Generate</button>
+		<button class="header_generate" onclick="generate()">Generate</button>
 	</div>
 
 </div>
 
 
-<div class="content">
+<div class="content" id="content">
 	<div class="content_block">
 		<div class="content_block_text">
-			<img src="alessandro-manzoni.jpg" class="content_block_text_img">
-			<span class="content_block_text_title">
+			<img src="img/alessandro-manzoni.jpg" class="content_block_text_img">
+			<span class="content_block_text_main">
 				<p>Alessandro Manzoni</p>
 				<p>1785 - 1873</p>
 				<p><strong class="years_together">88</strong><br> years of life at the same time</p>
@@ -41,47 +46,10 @@
 		</div>
 
 		<div class="middle">
-			<img src="line.png" class="middle_img" alt="line">
+			<img src="img/line.png" class="middle_img" alt="line">
 		</div>
 		<div></div>
 	</div>
-
-
-
-	<div class="content_block">
-		<div></div>
-		<div class="middle">
-			<img src="line.png" class="middle_img" alt="line">
-		</div>
-		<div class="content_block_text">
-			<span class="content_block_text_title">
-				<p>Napoleon Bonaparte</p>
-				<p>1769 - 1821 </p>
-				<p><strong>55</strong><br> years of life at the same time</p>
-			</span>
-			<img src="Napoleon.jpg" class="content_block_text_img">
-		</div>
-	</div>
-
-
-
-
-	<div class="content_block">
-		<div class="content_block_text">
-			<img src="Beethoven.jpg" class="content_block_text_img">
-			<span class="content_block_text_title">
-				<p>Ludwig van Beethoven</p>
-				<p>1770 - 1827 </p>
-				<p><strong>68</strong><br> years of life at the same time</p>
-			</span>
-		</div>
-
-		<div class="middle">
-			<img src="line.png" class="middle_img" alt="line">
-		</div>
-		<div></div>
-	</div>
-
 </div>
 
 </body>
