@@ -1,15 +1,21 @@
+img{vertical-align: top;}
 body{
 	margin: 0px;
 	color: white; 
-	background-color:#00172C;
+	background-color:#04001c;
+	font-family: 'Merriweather Sans', sans-serif;
 }
 p{
 	margin:0px;
 }
 .header{
 	width: 100%;
-	height: auto;
-	background-color: #000B32;
+	height: 400px;
+	background-image: url(img/FonTitle2.png);
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover; 
+
 	text-align: center;
 	margin:0 auto;
 	padding-bottom: 40px;
@@ -27,7 +33,7 @@ p{
 	font-size: 30px;
 }
 .header_between_input{
-	background-color: #000B32;
+	background-color: #04001c	;
 	color: white;
 	border-style: solid;
 	border-width: 0px 0px 6px 0px;
@@ -39,30 +45,56 @@ p{
 
 .header_generate{
 	margin-top: 50px;
-	font-size: 35px;
+	font-size: 40px;
 	width: 300px;
 	padding: 10px;
+	border-color: white;
+	border-width: 3px;
+	color:white;
+
+border-radius: 30px;
+background: linear-gradient(145deg, #1a00ae, #160093);
+box-shadow:  17px 17px 48px #0a0041,
+             -17px -17px 48px #2600ff;
 }
 
+.image_line{
+	height: 150px;
+	background-image: url(img/Description.png);
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+.description{
+	border:solid;
+	border-width: 3px;
+	width: 700px;
+	margin:0 auto;
+	padding: 20px;
+	border-radius: 20px;
+	font-size: 25px;
+}
+.description_attention{
+	color:red;
+}
 .content{
 	width: 100%;
 	max-width: 1200px;
 	margin:0 auto;
 	height: auto;
-	background-color:#00172C;
 }
 .content_block{
 	display: grid;
 	grid-template-columns: 45% 10% 45%;
 	width: auto;
 	text-align: center;
-}
 
+}
 .content_block_text{
 	display: grid;
 	grid-template-columns: auto auto auto;
-	font-size: 22px;
-	margin:60px 0px 0px 0px;
+	font-size: 30px;
+	margin:50px 0px 0px 0px;
 }
 .content_block_text_img{
 	width: 200px;
@@ -70,6 +102,7 @@ p{
 }
 .content_block_text_main{
 	width: 300px;
+	margin-top: 30px;
 }
 .content_block_text_title p{
 	margin:10px 0px 0px 0px;

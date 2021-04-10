@@ -5,21 +5,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Hello world</title>
         <link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
 	</head>
 <body>
-<script src="generate.js">
-</script>
-<script src="otherFunction.js">
-</script>
-<script src="createParagraph.js">
-</script>
-<script src="createMiddle.js">
-</script>
-<script src="createContentBlockText.js">
-</script>
-<script src="contentBlock_Left-Right.js">
-</script>
 
+<script src="JS/generate.js">
+</script>
+<script src="JS/otherFunction.js">
+</script>
+<script src="JS/createParagraph.js">
+</script>
+<script src="JS/createMiddle.js">
+</script>
+<script src="JS/createContentBlockText.js">
+</script>
+<script src="JS/contentBlock_Left-Right.js">
+</script>
+<script src="JS/library.js">
+</script>
+<script src="JS/Elimination.js">
+</script>
 
 
 <div class="header">
@@ -27,19 +33,24 @@
 	<h2 class="header_text">Inserisci l'anno di nascita e data di morte della persona ipotizzata</h2>
 
 	<div class="header_between">
-		<p class="header_between_text">Beetwen
-			<input class="header_between_input" type="text">
-			and
-			<input class="header_between_input" type="text">
+		<p class="header_between_text">Tra
+			<input class="header_between_input" type="text" id="Birthday">
+			e
+			<input class="header_between_input" type="text" id="Dead">
 		</p>
 	</div>
 
 	<div>
-		<button class="header_generate" onclick="generate()">Generate</button>
+		<button class="header_generate" onclick="generate()">Genera</button>
 	</div>
 
 </div>
 
+<div class="image_line" id="image_line">
+</div>
+<div class="description" id="description"><p>Quando si fa clic sul pulsante, verrà visualizzato un elenco di persone che hanno vissuto nello stesso periodo di tempo(dell'anno di nascita e di morte) della persona immessi in alto.</p>
+<p class="description_attention">Arco di tempo disponibile è dal 1449 al 2020</p>
+</div>
 
 <div class="content" id="content">
 </div>
