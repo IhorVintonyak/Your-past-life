@@ -11,13 +11,13 @@ function createParagraphAge(person){
 	pAge.appendChild(pAgeText);
 	return pAge;
 }
-function createParagraphYearsTogether(person){
+function createParagraphYearsTogether(person,inputBirthday,inputDead){
 	let pYearsTogether = document.createElement("p");
 
 	let br = document.createElement("br");
 	let numberStrong = document.createElement("strong");
-	let numberOfYears = document.createTextNode(calculateYearsTogether(person.birthday,person.dead))
-	let pYearsTogetherText = document.createTextNode("years of life at the same time")
+	let numberOfYears = document.createTextNode(calculateYearsTogether(person.birthday,person.dead,inputBirthday,inputDead))
+	let pYearsTogetherText = document.createTextNode("anni vissuti contemporaneamente")
 
 	numberStrong.appendChild(numberOfYears);
 	numberStrong.classList.add("years_together");
